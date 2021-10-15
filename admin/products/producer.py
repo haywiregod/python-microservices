@@ -1,11 +1,10 @@
-# amqps://gmwvpgfv:K1fLeJwX94kUFQk2FSy_AsCfyklJlmMa@puffin.rmq2.cloudamqp.com/gmwvpgfv
 import pika
 import json
 from pika import connection
 from pika import channel
 
 params = pika.URLParameters(
-    'amqps://gmwvpgfv:K1fLeJwX94kUFQk2FSy_AsCfyklJlmMa@puffin.rmq2.cloudamqp.com/gmwvpgfv')
+    'rabbit_MQ_URL_HERE')
 
 connection = pika.BlockingConnection(params)
 

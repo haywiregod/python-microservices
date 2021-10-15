@@ -1,5 +1,3 @@
-# amqps://gmwvpgfv:K1fLeJwX94kUFQk2FSy_AsCfyklJlmMa@puffin.rmq2.cloudamqp.com/gmwvpgfv
-
 import pika
 import json
 import os
@@ -11,7 +9,7 @@ django.setup()
 
 
 params = pika.URLParameters(
-    'amqps://gmwvpgfv:K1fLeJwX94kUFQk2FSy_AsCfyklJlmMa@puffin.rmq2.cloudamqp.com/gmwvpgfv')
+    'rabbitMQ_URL_HERE')
 
 connection = pika.BlockingConnection(params)
 
